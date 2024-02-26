@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TLC Deals</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(245, 222, 188);
+    }
+
+    .container {
+      text-align: center;
+      padding-top: 10px;
+      margin-top: 0;
+    }
+
+    .fancy-heading {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 36px;
+      color: purple;
+      text-align: center;
+      text-shadow: 2px 2px 4px #ccc;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #ffc107;
+      border: none;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #ffd700;
+    }
+
+    img {
+      border-radius: 10px;
+      aspect-ratio: 3/2;
+      width: 300px;
+      height:300px;
+    }
+
+    .offer {
+      background-color: rgba(243, 191, 191, 0.436);
+      border-radius: 10px;
+      padding: 30px;
+      margin: 30px auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .offer h3 {
+      margin-top: 0;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .offer p {
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    .offer p b{
+      font-weight: 2000;
+    }
+
+
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 15px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: rgb(207, 160, 104);
+    }
+
+    .reserv a {
+      background-color: rgb(173, 39, 39);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-right: 10px;
+      text-decoration: none;
+      border-radius: 50px;
+    }
+
+
+    .contain {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header {
+      background-color: rgb(223, 186, 131);
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer-image {
+      width: 200px;
+      margin-right: 10px;
+      margin-left: 100px;
+      height: 300px;
+
+    }
+
+    .footer-content {
+      flex: 1;
+      margin-left: 400px;
+      color: white;
+      font-size:20px;
+    }
+
+    .emj {
+      font-size: 20px;
+    }
+
+    footer {
+      background-image: url(footer-bg.jpg);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="contain">
+      <nav>
+        <a href="new_homepage.html">HOME</a>
+        <a href="welcome.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="#">OFFERS</a>
+        <a href="giftcards.html">DEALS</a>
+        <a href="franchise.html">FRANCHISE</a>
+        <a href="contact_us.html">CONTACT US</a>
+      </nav>
+      <div class="reserv">
+        <a href="cart_form.html">View Cart</a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Deals</h1>
+
+    <div class="offer">
+      <h3>Family Feast Bonanza</h3>
+      <p>Enjoy the family night dinner with 2 starters, 2 sabji, 10 tandori naan, 2 Italian Rice and a dessart only at
+        Rs 1999</p>
+      <p>To reedem use promo code <b>#FamilyFeastTLC</b></p>
+      <img src="happy_hour.jpg" alt="Happy Hour" style="margin-left: auto;" width="200" height="210">
+    </div>
+
+    <div class="offer">
+      <h3>Sip 'n Slice Saturdays</h3>
+      <p>Get a combo of Italian pizza and white pasta served with coca-cola only at Rs 499</p>
+      <p>To redeem use promo code <b>#SipSliceSaturday</b></p>
+      <img src="lunch.jpg" alt="Happy Hour" style="margin-left: auto;" width="200" height="210">
+    </div>
+
+    <div class="offer">
+      <h3>Italian Dinner Package</h3>
+      <p>Feeding a family? Our dinner package includes a large pizza, salad, and garlic bread for Rs300.</p>
+      <p>To redeem use promo code <b>#ItalianWithTLC</b></p>
+      <img src="dinner.jpg" alt="Happy Hour" style="margin-left: auto;" width="200" height="210">
+    </div>
+
+    <div class="offer">
+      <h3>Weekend Brunch Special</h3>
+      <p>Join us for brunch on Saturdays and Sundays only for Rs 450.</p>
+      <p>To redeem use promo code <b>#WeekendBruch</b></p>
+      <img src="weekend.jpg" alt="Happy Hour" style="margin-left: auto;" width="200" height="210">
+    </div>
+  </div>
+
+  <footer>
+    <img src="The_Lazy_Cook.png" alt="3D Image" class="footer-image">
+    <div class="footer-content">
+      <p>
+      <h3>Location <span class="emj">&#127757:</span> </h3>Nathuram Godse Marg,Sector 16,New Delhi</p>
+      <p>
+      <h3>E-mail &#9993:</h3>Thelazycook@gmail.cook</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

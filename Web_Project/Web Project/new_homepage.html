@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(245, 222, 188);
+    }
+
+    header {
+        background-color: rgb(223, 186, 131);
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .contain {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 10px 15px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        background-color: rgb(207, 160, 104);
+        color: rgb(76, 50, 10);
+    }
+
+    .reservation a {
+        background-color: rgb(173, 39, 39);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+
+
+    .content {
+        display: flex;
+        align-items: center;
+    }
+
+    p {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+
+    .reservation2 a {
+        background-color: rgb(245, 222, 188);
+        color: black;
+        padding: 10px 20px;
+        border: 2px solid red;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+
+    #firstImg {
+        margin-right: 150px;
+        margin-top: 40px;
+        height: 400px;
+        max-width: 100%;
+        border-radius: 500px;
+        border: 2px solid rgb(223, 186, 131);
+    }
+
+    #firstP {
+        margin-left: 200px;
+        font-size: 40px;
+        font-size: 40px;
+    }
+
+    .reservation2 a:hover {
+        background-color: #f4caa5;
+    }
+
+    footer {
+        background-image: url(footer-bg.jpg);
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-image {
+        width: 200px;
+        margin-right: 10px;
+        margin-left: 100px;
+        height: 300px;
+
+    }
+
+    .footer-content {
+        flex: 1;
+        margin-left: 400px;
+        color: white;
+        font-size:20px;
+    }
+
+    .emj {
+        font-size: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .try {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-card {
+        max-width: 300px;
+        margin: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+        border: 2px solid #796e54;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+    }
+
+    .menu-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        aspect-ratio: 3/2;
+        transition: opacity 0.3s ease-in;
+    }
+
+    .menu-card:hover {
+        transform: scale(1.1);
+        opacity: 1;
+
+        .menu-card img {
+            opacity: 0.8;
+        }
+    }
+
+    .menu-text {
+        padding: 10px;
+        background-color: #f4caa5;
+    }
+
+    .menu-text h3 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    #Categories {
+        background-color: rgb(66, 54, 34);
+        color: white;
+        height: 50px;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .con {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    .recent-posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .post {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .post img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.4s ease-out;
+
+    }
+
+    .post img:hover {
+        transform: rotate(-1.5deg);
+    }
+
+
+    .post-content {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .post-title {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .post-meta {
+        color: #888;
+        font-size: 1.2em;
+    }
+
+    /* .post-text {
+      float: left;
+      width: calc(100% - 260px);
+    } */
+
+    .post img {
+        float: right;
+        width: 380px;
+        height: 350px;
+        margin-left: 20px;
+    }
+
+    .post-text {
+        font-size: 20px;
+        text-align: justify;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="contain">
+            <nav>
+                <a href="new_homepage.html">HOME</a>
+                <a href="welcome.html">ABOUT</a>
+                <a href="menu.html">MENU</a>
+                <a href="#">OFFERS</a>
+                <a href="giftcards.html">DEALS</a>
+                <a href="franchise.html">FRANCHISE</a>
+                <a href="contact_us.html">CONTACT US</a>
+            </nav>
+            <div class="reservation">
+                <a href="cart_form.html">View Cart</a>
+            </div>
+        </div>
+    </header>
+    <h1 style="font-family:cursive; font-size: 3em;">THE LAZY COOK <span style="font-size: 1.5em; vertical-align:baseline;"> &#127869;</span></h1>
+    <div class="content">
+        <p id="firstP">Start Your TLC's Order <br><br> <span class="reservation2"><a href="#"
+                    style="font-size: 30px; text-decoration: none;">&#128757;Order Now</a></span><br><br><span
+                style="font-size:25px;">Taste perfection at The Lazy Cook-<br> Unforgettable dining awaits!</span></p>
+        <img src="wel-removebg-preview.png" alt="image" id="firstImg">
+    </div>
+    <br>
+
+    <div id="Categories">Categories:</div>
+
+    <div class="try">
+        <div>
+            <div class="menu-card">
+                <img src="italian.jpg" alt="Description">
+                <div class="menu-text">
+                    <h3>Italian</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="menu-card">
+                <img src="south-indian.jpg" alt="Description">
+                <div class="menu-text">
+                    <h3>South Indian</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="menu-card">
+                <img src="sabji.jpg" alt="Description">
+                <div class="menu-text">
+                    <h3>Sabji</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="menu-card">
+                <img src="chinese.png" alt="Description">
+                <div class="menu-text">
+                    <h3>Chinese</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="try">
+        <div>
+            <div class="menu-card">
+                <img src="sizzlers.jpg" alt="Description">
+                <div class="menu-text">
+                    <h3>Sizzlers</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="menu-card">
+                <img src="roti.png" alt="Description">
+                <div class="menu-text">
+                    <h3>Roti</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="menu-card">
+                <img src="beverages.jpg" alt="Description">
+                <div class="menu-text">
+                    <h3>Beverages</h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="menu-card">
+                <img src="dessart.jpg" alt="Description">
+                <div class="menu-text">
+                    <h3>Dessert</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="Categories">Recent Posts</h2>
+
+    <div class="con">
+
+        <div class="post">
+            <img src="pink_pasta.jpeg" alt="Post 1 Image">
+            <div class="post-content">
+                <h3 class="post-title">"Blushing Beauty on Your Plate: Pink Pasta Perfection"</h3>
+                <p class="post-meta">Published on 14 February, 2024</p>
+                <p class="post-text">Indulge in culinary sophistication with our Pink Pasta. This visually stunning dish
+                    features al dente pasta draped in a luscious blush sauce, marrying sun-ripened tomatoes with creamy
+                    parmesan. Elevate your dining experience with our Signature Pink Pasta - a delightful symphony of
+                    flavors in every bite. Reserve your table now for an evening of elegance at The Lazy Cook. Bon
+                    Appetit!</p>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="post">
+            <img src="italian.jpg" alt="Post 2 Image">
+            <div class="post-content">
+                <h3 class="post-title">"Sizzling Italian Temptation: Experience the Italian Sizzler Extravaganza"</h3>
+                <p class="post-meta">Published on Janauary 20, 2024</p>
+                <p class="post-text">Indulge in the symphony of flavors with our Italian Sizzler. This culinary delight
+                    features succulent grilled meats, vibrant vegetables, and a medley of Italian spices served on a hot
+                    sizzling platter. Each bite is a journey through the heart of Italy, where the sizzle of exquisite
+                    ingredients meets the warmth of shared moments. Join us at The Laxy Cook to experience the
+                    sizzling sensation of our Italian masterpiece. Reserve your table now for an unforgettable
+                    gastronomic adventure. Buon Appetito!</p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="post">
+            <img src="oreo-nuterla_shake.jpg" alt="Post 3 Image">
+            <div class="post-content">
+                <h3 class="post-title">"Irresistible Bliss: Savor the Oreo Nutella Shake Sensation"</h3>
+                <p class="post-meta">Published on December 15, 2023</p>
+                <p class="post-text">Dive into pure indulgence with our Oreo Nutella Shake. This delightful concoction blends the richness of Nutella with the iconic crunch of Oreo cookies, creating a velvety smooth shake that is both decadent and satisfying. Each sip is a symphony of flavors, an exquisite treat for your taste buds. Join us at The Lazy Cook and elevate your shake experience with the exquisite Oreo Nutella Shake. Reserve your table now for a journey into shake perfection. Cheers!</p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="post">
+            <img src="vegetable_lasagna.jpg" alt="Post 4 Image">
+            <div class="post-content">
+                <h3 class="post-title">"Vegetarian Delight: Indulge in the Layers of Flavor with our Vegetable Lasagna"</h3>
+                <p class="post-meta">Published on December 1, 2023</p>
+                <p class="post-text">Experience a culinary masterpiece with our Vegetable Lasagna. Layers of fresh vegetables, perfectly cooked pasta, and rich, savory tomato sauce come together to create a symphony of flavors that will delight your palate. This vegetarian delight is a testament to our commitment to quality ingredients and exceptional taste. Join us at [Restaurant Name] to savor the perfection of our Vegetable Lasagna. Reserve your table now for an evening of wholesome and delicious dining. Buon Appetito!</p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+
+    <footer>
+        <img src="The_Lazy_Cook.png" alt="3D Image" class="footer-image">
+        <div class="footer-content">
+            <p>
+            <h3>Location <span class="emj">&#127757:</span> </h3>Nathuram Godse Marg,Sector 16,New Delhi</p>
+            <p>
+            <h3>E-mail &#9993:</h3>Thelazycook@gmail.cook</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

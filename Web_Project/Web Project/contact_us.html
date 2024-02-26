@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Restaurant Name</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(245, 222, 188);
+        }
+
+
+        header {
+            background-color: rgb(223, 186, 131);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: rgb(207, 160, 104);
+            color: rgb(76, 50, 10);
+        }
+
+        .reservation a {
+            background-color: rgb(173, 39, 39);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+
+
+        .content {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-image: url(footer-bg.jpg);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-image {
+            width: 200px;
+            margin-right: 10px;
+            margin-left: 100px;
+            height: 300px;
+
+        }
+
+        .footer-content {
+            flex: 1;
+            margin-left: 400px;
+            color: white;
+            font-size:20px;
+        }
+
+        .emj {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="contain">
+            <nav>
+                <a href="new_homepage.html">HOME</a>
+                <a href="welcome.html">ABOUT</a>
+                <a href="menu.html">MENU</a>
+                <a href="#">OFFERS</a>
+                <a href="giftcards.html">DEALS</a>
+                <a href="franchise.html">FRANCHISE</a>
+                <a href="contact_us.html">CONTACT US</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <center>
+            <h2 style="font-size: 30px;">Contact Us</h2>
+        </center>
+        <center>
+            <p style="font-size: 20px;">Feel free to reach out to us with any questions or feedback.</p>
+        </center>
+        <hr>
+
+        <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter name">
+            <div id="nameError" class="error"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter e-mail">
+            <div id="emailError" class="error"></div>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter phone number">
+            <div id="phoneError" class="error"></div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div id="messageError" class="error"></div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
+
+
+            document.getElementById('nameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+            document.getElementById('phoneError').innerText = '';
+            document.getElementById('messageError').innerText = '';
+
+
+            if (name.trim() === '') {
+                document.getElementById('nameError').innerText = 'Name is required';
+                return false;
+            }
+
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').innerText = 'Enter a valid email address';
+                return false;
+            }
+
+
+            var phoneRegex = /^[0-9]{10}$/;
+            if (phone.trim() !== '' && !phoneRegex.test(phone)) {
+                document.getElementById('phoneError').innerText = 'Enter a valid 10-digit phone number';
+                return false;
+            }
+
+
+            if (message.trim() === '') {
+                document.getElementById('messageError').innerText = 'Message is required';
+                return false;
+            }
+
+
+            return true;
+        }
+    </script>
+
+    <footer>
+        <img src="The_Lazy_Cook.png" alt="3D Image" class="footer-image">
+        <div class="footer-content">
+            <p>
+            <h3>Location <span class="emj">&#127757:</span> </h3>Nathuram Godse Marg,Sector 16,New Delhi</p>
+            <p>
+            <h3>E-mail &#9993:</h3>Thelazycook@gmail.cook</p>
+        </div>
+    </footer>
+</body>
+
+</html>

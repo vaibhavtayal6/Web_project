@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(245, 222, 188);
+        }
+
+        header {
+            background-color: rgb(223, 186, 131);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ceb686;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .menu-section {
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 5px;
+            aspect-ratio: 3/2;
+        }
+
+        .menu-item-info {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #777;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: rgb(207, 160, 104);
+            color: rgb(76, 50, 10);
+        }
+
+        .reservation a {
+            background-color: rgb(173, 39, 39);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+
+        .menu-card {
+            max-width: 300px;
+            margin: 40px;
+            text-align: center;
+            border: 2px solid #796e54;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            aspect-ratio: 3/2;
+            transition: opacity 0.3s ease-in;
+        }
+
+        .try {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-text {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="contain">
+            <nav>
+                <a href="new_homepage.html">HOME</a>
+                <a href="welcome.html">ABOUT</a>
+                <a href="menu.html">MENU</a>
+                <a href="#">OFFERS</a>
+                <a href="giftcards.html">GIFT CARDS</a>
+                <a href="franchise.html">FRANCHISE</a>
+                <a href="contact_us.html">CONTACT</a>
+            </nav>
+            <div class="reservation">
+                <a href="cart_form.html">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <center>
+            <h2 style="font-size: 30px;">South Indian Cuisine</h2>
+        </center>
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="idli.jpg" alt="Idli">
+                    <div class="menu-item-info">
+                        <h2>Idli</h2>
+                        <p class="price">Rs 100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="masala_dosa.jpg" alt="Dosa">
+                    <div class="menu-item-info">
+                        <h2>Masala Dosa</h2>
+                        <p class="price">Rs 180</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="pongal.jpg" alt="Pongal">
+                    <div class="menu-item-info">
+                        <h2>Pongal</h2>
+                        <p class="price">Rs 150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="sambhar_vada.jpg" alt="Vada Sambar">
+                    <div class="menu-item-info">
+                        <h2>Vada Sambar</h2>
+                        <p class="price">Rs 100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="rava_dosa.jpg" alt="Rava Dosa">
+                    <div class="menu-item-info">
+                        <h2>Rava Dosa</h2>
+                        <p class="price">Rs 190</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="curd_rice.jpg" alt="Curd Rice">
+                    <div class="menu-item-info">
+                        <h2>Curd Rice</h2>
+                        <p class="price">Rs 130</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="uttampam1.jpg" alt="Uttapam">
+                    <div class="menu-item-info">
+                        <h2>Uttapam</h2>
+                        <p class="price">Rs 120</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="Bisi.JPG" alt="Bisi Bele Bath">
+                    <div class="menu-item-info">
+                        <h2>Bisi Bele Bath</h2>
+                        <p class="price">Rs 120</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="rasam.jpg" alt="Rasam">
+                    <div class="menu-item-info">
+                        <h2>Rasam</h2>
+                        <p class="price">Rs 99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <center>
+            <h2 style="font-size: 30px;">Chinese Cuisine</h2>
+        </center>
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="hot-and-sour.jpg" alt="Hot and Sour">
+                    <div class="menu-item-info">
+                        <h2>Hot and Sour Soup</h2>
+                        <p class="price">Rs 90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="manchow.jpeg" alt="Manchow Soup">
+                    <div class="menu-item-info">
+                        <h2>manchow Soup</h2>
+                        <p class="price">Rs 90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="manchurian.jpg" alt="Vegetable Manchurian">
+                    <div class="menu-item-info">
+                        <h2>Veg. Manchurian</h2>
+                        <p class="price">Rs 150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="spring_rolls.jpg" alt="Spring Roll Noodles">
+                    <div class="menu-item-info">
+                        <h2>Spring Roll Noodles</h2>
+                        <p class="price">Rs 90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="scehzwan_rice.jpg" alt="Schezwan Fried Rice">
+                    <div class="menu-item-info">
+                        <h2>Schezwan Rice</h2>
+                        <p class="price">Rs 170</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="sweet_corn_soup.jpg" alt="Sweet Corn Soup">
+                    <div class="menu-item-info">
+                        <h2>Sweet Corn Soup</h2>
+                        <p class="price">Rs 90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="chilli_panner.jpeg" alt="Chilli Paneer">
+                    <div class="menu-item-info">
+                        <h2>Chilli Paneer</h2>
+                        <p class="price">Rs 220</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="Chilli_potato.jpg" alt="Chilli Potato">
+                    <div class="menu-item-info">
+                        <h2>Chilli Potato</h2>
+                        <p class="price">Rs 200</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="hakka.jpg" alt="Hakka Noodles">
+                    <div class="menu-item-info">
+                        <h2>Hakka Noodles</h2>
+                        <p class="price">Rs 160</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="manchurian_ric.jpg" alt="Manchurian Fried Rice">
+                    <div class="menu-item-info">
+                        <h2>Manchurian Rice</h2>
+                        <p class="price">Rs 180</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="veg_rolls.jpg" alt="Spring Rolls">
+                    <div class="menu-item-info">
+                        <h2>Vegetable Rolls</h2>
+                        <p class="price">Rs 100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-card">
+                    <img src="hakka.jpg" alt="Hakka Noodles">
+                    <div class="menu-item-info">
+                        <h2>Hakka Noodles</h2>
+                        <p class="price">Rs 160</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <center>
+            <h2 style="font-size: 30px;">Sizzlers</h2>
+        </center>
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="contential_sizzler.jpg" alt="Chinese Sizzler">
+                    <div class="menu-item-info">
+                        <h2>Continental Sizzler</h2>
+                        <p class="price">Rs 250</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="mexican_sizzler.jpg" alt="Mexican Sizzler">
+                    <div class="menu-item-info">
+                        <h2>Mexican Sizzler</h2>
+                        <p class="price">Rs 290</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="panner_sizzler.jpg" alt="paneer Sizzler">
+                    <div class="menu-item-info">
+                        <h2>paneer Sizzler</h2>
+                        <p class="price">Rs 240</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="chinese_sizzler.png" alt="Chinese Sizzler">
+                    <div class="menu-item-info">
+                        <h2>Chinese Sizzler</h2>
+                        <p class="price">Rs 250</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="italian_sizzler.png" alt="Italian Sizzler">
+                    <div class="menu-item-info">
+                        <h2>Italian Sizzler</h2>
+                        <p class="price">Rs 350</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="naughty-sizzler.jpg" alt="Chinese Sizzler">
+                    <div class="menu-item-info">
+                        <h2>Naughty Sizzler</h2>
+                        <p class="price">Rs 250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <center>
+            <h2 style="font-size: 30px;">Italian</h2>
+        </center>
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="aglio.jpg" alt="Spaghetti Aglio e Olio">
+                    <div class="menu-item-info">
+                        <h2>Spaghetti</h2>
+                        <p class="price">Rs 210</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="red_paasta.png" alt="Red Pasta">
+                    <div class="menu-item-info">
+                        <h2>Red Pasta</h2>
+                        <p class="price">Rs 250</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="white_pasta.jpg" alt="White Pasta">
+                    <div class="menu-item-info">
+                        <h2>White Pasta</h2>
+                        <p class="price">Rs 250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is 2nd line -->
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="pink_pasta.jpeg" alt="Pink Pasta">
+                    <div class="menu-item-info">
+                        <h2>Pink Pasta</h2>
+                        <p class="price">Rs 270</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="mushroom_risotto.jpg" alt="Mushroom Risotto">
+                    <div class="menu-item-info">
+                        <h2>Mushroom Risotto</h2>
+                        <p class="price">Rs 200</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="vegetable_lasagna.jpg" alt="Vegetable Lasagna">
+                    <div class="menu-item-info">
+                        <h2>Vegetable Lasagna</h2>
+                        <p class="price">Rs 190</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is 3rd line -->
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="onion.png" alt="onion Pizza">
+                    <div class="menu-item-info">
+                        <h2>Onion Capsicum <br>Pizza</h2>
+                        <p class="price">Rs 210</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="corn.jpg" alt="Paneer Pizza">
+                    <div class="menu-item-info">
+                        <h2>Paneer Corn <br>Pizza</h2>
+                        <p class="price">Rs 230</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="tandoori_paneer.jpg" alt="Paneer Pizza">
+                    <div class="menu-item-info">
+                        <h2>Tandoori Paneer <br>Pizza</h2>
+                        <p class="price">Rs 240</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is 4th line -->
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="margerita_pizza.jpg" alt="Margherita Pizza">
+                    <div class="menu-item-info">
+                        <h2>Margherita Pizza</h2>
+                        <p class="price">Rs 210</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="garlic_bread.png" alt="garlic Bread">
+                    <div class="menu-item-info">
+                        <h2>garlic Bread</h2>
+                        <p class="price">Rs 180</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="spaghetti.jpg" alt="Spaghetti Bolognese">
+                    <div class="menu-item-info">
+                        <h2>Spaghetti Bolognese</h2>
+                        <p class="price">Rs 200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menu-section">
+        <h2 style="font-size: 30px;text-align:center;">Main Course</h2>
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="kaju.jpg" alt="Kaju Masala">
+                    <div class="menu-item-info">
+                        <h2>Kaju Masala</h2>
+                        <p class="price">Rs 210</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="bhindi_masala.jpg" alt="Bhindi Masala">
+                    <div class="menu-item-info">
+                        <h2>Bhindi Masala</h2>
+                        <p class="price">Rs 120</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="palak_panner.jpg" alt="Palak Paneer">
+                    <div class="menu-item-info">
+                        <h2>Palak Paneer</h2>
+                        <p class="price">Rs 170</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="rajma_chawal.jpg" alt="Rajma Chawal">
+                    <div class="menu-item-info">
+                        <h2>Rajma Chawal</h2>
+                        <p class="price">Rs 130</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="dal_makhani.jpg" alt="Dal Makhani">
+                    <div class="menu-item-info">
+                        <h2>Dal Makhani</h2>
+                        <p class="price">Rs 140</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="aloo_gobi.jpg" alt="Aloo Gobi">
+                    <div class="menu-item-info">
+                        <h2>Aloo Gobi</h2>
+                        <p class="price">Rs 100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is 3rd line -->
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="kadhi_rice.jpg" alt="Kadhi Pakoda Rice">
+                    <div class="menu-item-info">
+                        <h2>Kadhi Pakoda Rice</h2>
+                        <p class="price">Rs 120</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="biryani.jpg" alt=" Biryani">
+                    <div class="menu-item-info">
+                        <h2>Veg Biryani</h2>
+                        <p class="price">Rs 190</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="panner_tikka.jpg" alt="Paneer Tikka">
+                    <div class="menu-item-info">
+                        <h2>Paneer Tikka</h2>
+                        <p class="price">Rs 230</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is 4th line -->
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="butter_paneer_masala.jpg" alt="Butter Paneer Masala">
+                    <div class="menu-item-info">
+                        <h2>Butter Paneer Masala</h2>
+                        <p class="price">Rs 190</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="shahi.jpg" alt="paneer Shahi">
+                    <div class="menu-item-info">
+                        <h2>Shahi Paneer</h2>
+                        <p class="price">Rs 220</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="handi.jpg" alt="paneer handi">
+                    <div class="menu-item-info">
+                        <h2>Paneer handi</h2>
+                        <p class="price">Rs 250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is 5th line -->
+        <div class="try">
+            <div>
+                <div class="menu-card">
+                    <img src="kadai_paneer.jpg" alt="Kadai paneer">
+                    <div class="menu-item-info">
+                        <h2>Kadai paneer</h2>
+                        <p class="price">Rs 210</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="lababdar.jpg" alt="paneer lababdar">
+                    <div class="menu-item-info">
+                        <h2>Paneer lababdar</h2>
+                        <p class="price">Rs 230</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu-card">
+                    <img src="butter_naan.jpg" alt="Butter Naan">
+                    <div class="menu-item-info">
+                        <h2>Butter Naan</h2>
+                        <p class="price">Rs 90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
